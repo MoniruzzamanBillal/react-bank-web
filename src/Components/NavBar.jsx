@@ -10,11 +10,11 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="navContainer  p-2">
+      <div className="navContainer  p-2 mb-8 w-[85%] m-auto">
         <div className="navWrapper flex justify-between items-center self-center">
           {/* left side of nav starts  */}
           <div className="navLeft ">
-            <div className="navLogo w-[50%]">
+            <div className="navLogo w-[34%] sm:w-[40%] md:w-[44%] ">
               <img src={logo} alt="" />
             </div>
           </div>
@@ -30,7 +30,7 @@ const NavBar = () => {
                     <li
                       className={`  ${
                         ind === navLinks.length - 1 ? "mr-0" : "mr-8"
-                      } text-[#FFFFFF] text-lg  `}
+                      } text-[#FFFFFF] sm:text-sm md:text-base lg:text-lg   `}
                     >
                       <a href={`#${ele.id}`}> {ele.title} </a>
                     </li>
@@ -52,23 +52,21 @@ const NavBar = () => {
                   onClick={() => setToggle(!toggle)}
                 />
               </div>
-
               {/* menu btn ends  */}
 
               {/* ul links  */}
-
               <div
                 className={`mobileMenu ${
                   toggle ? "flex " : "hidden"
-                } bg-black-gradient absolute top-8 right-0 p-6 text-[#FFFFFF] w-[full]`}
+                } bg-black-gradient absolute top-[1.8rem] right-0 py-3 px-6 text-[#FFFFFF] w-[full]`}
               >
-                <ul className="flex flex-col">
+                <ul className="flex flex-col ">
                   {navLinks.map((ele, ind) => (
                     <>
                       <li
                         className={`  ${
-                          ind === navLinks.length - 1 ? "mb-0" : "mb-2"
-                        } text-[#FFFFFF] text-lg  `}
+                          ind === navLinks.length - 1 ? "mb-0" : "mb-3"
+                        } text-[#FFFFFF] text-sm `}
                       >
                         <a
                           href={`#${ele.id}`}

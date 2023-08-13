@@ -8,10 +8,12 @@ import { NavBar, Hero } from "./Components";
 const App = () => {
   return (
     <>
-      {/* <div className="MainContainer bg-primary w-full"> */}
-      <div className="MainContainer bg-[#00040F] w-full ">
-        <div className="mainContainerWrapper  w-[85%] m-auto">
+      {/* <div className="MainContainer bg-primary bg-[#00040F] w-full"> */}
+      <div className="MainContainer  bg-[#00040F] w-full ">
+        <div className="mainContainerWrapper">
           <NavBar />
+
+          <Hero />
         </div>
       </div>
     </>
