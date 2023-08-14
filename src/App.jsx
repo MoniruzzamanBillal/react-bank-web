@@ -10,9 +10,8 @@ const App = () => {
     <>
       {/* <div className="MainContainer bg-primary bg-[#00040F] w-full"> */}
       <div className="MainContainer  bg-[#00040F] w-full ">
-        <div className="mainContainerWrapper">
+        <div className="mainContainerWrapper relative">
           <NavBar />
-
           <Hero />
         </div>
       </div>

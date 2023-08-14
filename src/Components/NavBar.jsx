@@ -8,9 +8,14 @@ import { navLinks } from "../constants/constants";
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
+  const menuClick = () => {
+    // console.log("menu click");
+    setToggle((prevToggle) => !prevToggle);
+  };
+
   return (
     <>
-      <div className="navContainer  p-2 mb-8 w-[85%] m-auto">
+      <div className="navContainer  p-2 mb-10 w-[85%] m-auto  ">
         <div className="navWrapper flex justify-between items-center self-center">
           {/* left side of nav starts  */}
           <div className="navLeft ">
@@ -24,13 +29,14 @@ const NavBar = () => {
           <div className="navRight ">
             {/* for pc view  */}
             <div className="navRightPC hidden sm:flex">
-              <ul className="flex">
+              <ul className="flex ">
                 {navLinks.map((ele, ind) => (
                   <>
                     <li
+                      key={Math.random() * 100}
                       className={`  ${
                         ind === navLinks.length - 1 ? "mr-0" : "mr-8"
-                      } text-[#FFFFFF] sm:text-sm md:text-base lg:text-lg   `}
+                      } text-[#FFFFFF] sm:text-sm md:text-base lg:text-lg  cursor-pointer `}
                     >
                       <a href={`#${ele.id}`}> {ele.title} </a>
                     </li>
@@ -44,12 +50,11 @@ const NavBar = () => {
 
             <div className="phoneView flex relative sm:hidden">
               {/* menu btn  */}
-              <div className="menuBtn">
-                {/* <img src={menu} alt="" onClick={() => setToggle(!toggle)} /> */}
+              <div className="menuBtn ">
                 <img
                   src={toggle ? close : menu}
                   alt=""
-                  onClick={() => setToggle(!toggle)}
+                  onClick={() => menuClick()}
                 />
               </div>
               {/* menu btn ends  */}
@@ -58,23 +63,19 @@ const NavBar = () => {
               <div
                 className={`mobileMenu ${
                   toggle ? "flex " : "hidden"
-                } bg-black-gradient absolute top-[1.8rem] right-0 py-3 px-6 text-[#FFFFFF] w-[full]`}
+                } bg-black-gradient absolute top-[1.8rem] right-0 py-3 px-6 text-[#FFFFFF] w-[full] z-[20]`}
               >
                 <ul className="flex flex-col ">
                   {navLinks.map((ele, ind) => (
                     <>
                       <li
+                        key={ind}
                         className={`  ${
                           ind === navLinks.length - 1 ? "mb-0" : "mb-3"
-                        } text-[#FFFFFF] text-sm `}
+                        } text-[#FFFFFF] text-sm cursor-pointer`}
+                        onClick={() => menuClick()}
                       >
-                        <a
-                          href={`#${ele.id}`}
-                          onClick={() => setToggle(!toggle)}
-                        >
-                          {" "}
-                          {ele.title}{" "}
-                        </a>
+                        <a href={`#${ele.id}`}>{ele.title}</a>
                       </li>
                     </>
                   ))}
