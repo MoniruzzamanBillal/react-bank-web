@@ -3,7 +3,7 @@ import Styles from "./Style";
 
 import "./index.css";
 
-import { NavBar, Hero } from "./Components";
+import { NavBar, Hero, Stats } from "./Components";
 
 const App = () => {
   return (
@@ -13,6 +13,8 @@ const App = () => {
         <div className="mainContainerWrapper relative">
           <NavBar />
           <Hero />
+
+          <Stats />
         </div>
       </div>
     </>

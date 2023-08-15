@@ -6,11 +6,11 @@ import GetStarted from "./GetStarted";
 const Hero = () => {
   return (
     <>
-      <div className="heroContainer ">
+      <div className="heroContainer mb-3 sm:mb-6 ">
         <div className="heroWrapper  flex ">
           {/* left side starts  */}
           <div className="heroLeftContainer w-[52%] sm:w-[60%] flex flex-col justify-center">
-            <div className="heroLeftContainerWrapper ml-10 sm:ml-12 md:ml-16 lg:ml-20 relative  ">
+            <div className="heroLeftContainerWrapper ml-10 sm:ml-12 md:ml-20 lg:ml-28 relative  ">
               {/* left top section  */}
               <div className="heroLeftTop inline-block mb-2 sm:mb-4 md:mb-5 lg:mb-6">
                 {/* hero top left starts  */}
