@@ -8,11 +8,11 @@ import Button from "./Button";
 const Business = () => {
   return (
     <>
-      <div className="businessContainer  mb-6">
-        <div className="businessWrapper  w-[85%] m-auto flex flex-col md:flex-row justify-between   ">
+      <div className="businessContainer mb-8 sm:mb-20">
+        <div className="businessWrapper  w-[85%] m-auto flex flex-col md:flex-row justify-between  ">
           {/*  */}
           {/* left side starts  */}
-          <div className="businessLeft  w-[100%] md:w-[51%] mb-5 md:mb-0 ">
+          <div className="businessLeft  w-[100%] sm:w-[90%] md:w-[50%] mb-5 md:mb-0 ">
             <div className="businessLeftWrapper">
               {/* top side of container starts  */}
               <div className="businessLeftTop text-white  font-semibold mb-4 md:mb-7 text-4xl lg:text-5xl ">

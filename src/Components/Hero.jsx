@@ -6,7 +6,7 @@ import GetStarted from "./GetStarted";
 const Hero = () => {
   return (
     <>
-      <div className="heroContainer mb-3 sm:mb-6 ">
+      <div className="heroContainer mb-6 md:mb-16 ">
         <div className="heroWrapper  flex ">
           {/* left side starts  */}
           <div className="heroLeftContainer w-[52%] sm:w-[60%] flex flex-col justify-center">

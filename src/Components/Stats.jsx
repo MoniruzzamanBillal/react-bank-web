@@ -6,7 +6,7 @@ import styles from "../Style";
 const Stats = () => {
   return (
     <>
-      <div className="statsContainer  mb-12">
+      <div className="statsContainer mb-8 sm:mb-20">
         <div className="startsWrapper  w-[85%] m-auto flex justify-between  items-center p-2 flex-col sm:flex-row ">
           {stats.map((ele, ind) => (
             <div

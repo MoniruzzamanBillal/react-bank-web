@@ -15,7 +15,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="navContainer  p-2 mb-7 sm:mb-10 w-[85%] m-auto  ">
+      <div className="navContainer  p-2 mb-7 sm:mb-12 w-[85%] m-auto  ">
         <div className="navWrapper flex justify-between items-center self-center">
           {/* left side of nav starts  */}
           <div className="navLeft ">

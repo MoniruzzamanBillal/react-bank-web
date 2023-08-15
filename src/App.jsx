@@ -3,7 +3,15 @@ import Styles from "./Style";
 
 import "./index.css";
 
-import { NavBar, Hero, Stats, Business, Billing } from "./Components";
+import {
+  NavBar,
+  Hero,
+  Stats,
+  Business,
+  Billing,
+  CardDeal,
+  Testimonials,
+} from "./Components";
 
 const App = () => {
   return (
@@ -16,6 +24,8 @@ const App = () => {
           <Stats />
           <Business />
           <Billing />
+          <CardDeal />
+          <Testimonials />
         </div>
       </div>
     </>

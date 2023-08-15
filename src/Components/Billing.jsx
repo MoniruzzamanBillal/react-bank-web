@@ -6,24 +6,26 @@ import styles from "../Style";
 const Billing = () => {
   return (
     <>
-      <div className="billingContainer bg-yellow-400 mb-8">
-        <div className="billingWrapper bg-fuchsia-500 w-[85%] m-auto flex justify-between flex-col md:flex-row  ">
+      <div className="billingContainer mb-8 sm:mb-20">
+        <div className="billingWrapper  w-[85%] m-auto flex justify-between flex-col md:flex-row  ">
           {/*  */}
 
           {/* billing left side starts  */}
-          <div className="billingLeftContainer bg-red-500 m-auto w-[98%] sm:w-[90%] md:w-[48%] mb-6 md:mb-0 ">
-            <div className="billingLeftImgContainer  bg-blue-600  ">
-              <img
-                src={bill}
-                alt=""
-                className=" w-[98%] h-[98%] m-auto bg-green-700 "
-              />
+          <div className="billingLeftContainer  m-auto w-[98%] sm:w-[90%] md:w-[48%] mb-6 md:mb-0 relative z-[8]">
+            <div className="billingLeftImgContainer    z-[6] ">
+              <img src={bill} alt="" className=" w-[98%] h-[98%] m-auto  " />
             </div>
+
+            {/*  */}
+            <div className="div1 absolute z-[1] w-[45%] h-[55%] top-[10rem] pink__gradient  "></div>
+            {/*  */}
+            <div className="div2 absolute z-[0] w-[50%] h-[60%] top-[8rem] left-8 white__gradient  "></div>
+            {/*  */}
           </div>
           {/* billing left side ends */}
 
           {/* billing right side starts  */}
-          <div className="billingRightContainer mx-auto w-[98%] sm:w-[90%] md:w-[52%] pr-0 md:pr-8 mb-6 md:mb-0 bg-red-600 bg-blue-400 flex flex-col justify-center items-center  ">
+          <div className="billingRightContainer mx-auto w-[98%] sm:w-[90%] md:w-[52%] pr-0 md:pr-8 mb-6 md:mb-0  flex flex-col justify-center items-center  ">
             <div className="billingRightContainerWrapper  ">
               {/* top side of container starts  */}
               <div className="billingRightTop text-white  font-semibold mb-4 md:mb-7 text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
@@ -52,7 +54,6 @@ const Billing = () => {
               </div>
               {/* bottom container ends  */}
             </div>
-            {/*  */}
           </div>
           {/* billing right side ends */}
 
