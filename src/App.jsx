@@ -3,7 +3,7 @@ import Styles from "./Style";
 
 import "./index.css";
 
-import { NavBar, Hero, Stats, Business } from "./Components";
+import { NavBar, Hero, Stats, Business, Billing } from "./Components";
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
           <Hero />
           <Stats />
           <Business />
+          <Billing />
         </div>
       </div>
     </>

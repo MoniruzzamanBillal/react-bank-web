@@ -34,9 +34,9 @@ const NavBar = () => {
                   <>
                     <li
                       key={Math.random() * 100}
-                      className={`  ${
-                        ind === navLinks.length - 1 ? "mr-0" : "mr-8"
-                      } text-[#FFFFFF] sm:text-sm md:text-base lg:text-lg  cursor-pointer `}
+                      className={` feature-card px-5 py-2 rounded-md ${
+                        ind === navLinks.length - 1 ? "mr-0" : "mr-2"
+                      } text-[#FFFFFF] hover:text-red-400 sm:text-sm md:text-base lg:text-lg  cursor-pointer `}
                     >
                       <a href={`#${ele.id}`}> {ele.title} </a>
                     </li>
