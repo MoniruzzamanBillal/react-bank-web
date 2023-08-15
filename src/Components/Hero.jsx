@@ -14,7 +14,7 @@ const Hero = () => {
               {/* left top section  */}
               <div className="heroLeftTop inline-block mb-2 sm:mb-4 md:mb-5 lg:mb-6">
                 {/* hero top left starts  */}
-                <div className="heroLeftTopContainer bg-discount-gradient  flex items-center self-center px-3 py-1 w-[100%] justify-start text-center ">
+                <div className="heroLeftTopContainer bg-discount-gradient  flex items-center self-center px-3 py-1 w-[100%] justify-start text-center rounded-md ">
                   <div className="heroLeftTopLogo mr-[.1rem] sm:mr-[.15rem] md:mr-1 lg:mr-2  hidden sm:block">
                     <img
                       src={discount}

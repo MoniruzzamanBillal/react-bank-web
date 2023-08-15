@@ -13,7 +13,6 @@ const App = () => {
         <div className="mainContainerWrapper relative">
           <NavBar />
           <Hero />
-
           <Stats />
         </div>
       </div>
