@@ -11,7 +11,7 @@ const Clients = () => {
           {clients &&
             clients.map((ele, ind) => (
               <div
-                className="clientItem  flex justify-center items-center mb-7 sm:mb-4 "
+                className="clientItem  flex justify-center items-center mb-7   sm:mb-4 "
                 key={ele.id}
               >
                 <img

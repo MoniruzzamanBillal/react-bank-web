@@ -13,6 +13,7 @@ import {
   Testimonials,
   Clients,
   CTA,
+  Footer,
 } from "./Components";
 import FeedBackCard from "./Components/FeedBackCard";
 
@@ -31,6 +32,7 @@ const App = () => {
           <Testimonials />
           <Clients />
           <CTA />
+          <Footer />
         </div>
       </div>
     </>

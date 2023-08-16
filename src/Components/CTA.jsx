@@ -5,7 +5,7 @@ const CTA = () => {
   return (
     <>
       <div className="ctaContainer  mb-8 md:mb-16  ">
-        <div className="ctaWrapper bg-black-gradient w-[80%] md:w-[70%] m-auto rounded-md ">
+        <div className="ctaWrapper bg-black-gradient w-[90%] sm:w-[82%] md:w-[70%] m-auto rounded-md ">
           {/* card starts  */}
           <a className=" px-2 py-6 sm:px-6 sm:py-8 md:px-8  md:py-12 rounded-md shadow flex justify-between items-center cursor-pointer">
             {/* left side of card starts  */}
