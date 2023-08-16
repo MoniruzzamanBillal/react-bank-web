@@ -11,6 +11,8 @@ import {
   Billing,
   CardDeal,
   Testimonials,
+  Clients,
+  CTA,
 } from "./Components";
 import FeedBackCard from "./Components/FeedBackCard";
 
@@ -27,6 +29,8 @@ const App = () => {
           <Billing />
           <CardDeal />
           <Testimonials />
+          <Clients />
+          <CTA />
         </div>
       </div>
     </>

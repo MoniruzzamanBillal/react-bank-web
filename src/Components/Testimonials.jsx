@@ -7,11 +7,11 @@ import FeedBackCard from "./FeedBackCard";
 const Testimonials = () => {
   return (
     <>
-      <div className="testimonialWrapper  mb-8 sm:mb-20 ">
+      <div className="testimonialWrapper  mb-8 sm:mb-16 ">
         <div className="testimonialWrapper  w-[85%] m-auto ">
           {/* testimonial top section starts  */}
 
-          <div className="testimonialTop mb-4 sm:mb-6 md:mb-8 flex justify-between items-center self-center   ">
+          <div className="testimonialTop mb-4 sm:mb-6 md:mb-10 flex justify-between items-center self-center   ">
             {/*  */}
             <div className="testimonialTopLeft w-[49%] md:w-[47%] lg:w-[44%] p-1 text-white text-3xl md:text-4xl lg:text-5xl ">
               <h1>What people are saying about us</h1>
