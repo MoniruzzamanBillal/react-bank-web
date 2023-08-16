@@ -12,6 +12,7 @@ import {
   CardDeal,
   Testimonials,
 } from "./Components";
+import FeedBackCard from "./Components/FeedBackCard";
 
 const App = () => {
   return (
